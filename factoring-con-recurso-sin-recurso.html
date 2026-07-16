@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Factoring con recurso y sin recurso: quién asume el riesgo</title>
+  <meta name="description" content="Factoring con recurso y sin recurso explicado fácil: quién asume el riesgo de impago, por qué cambia la rentabilidad y qué debe mirar el inversor antes de invertir." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://anblanch.github.io/guia-factoring/blog/factoring-con-recurso-sin-recurso.html" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Factoring con recurso y sin recurso: quién asume el riesgo" />
+  <meta property="og:description" content="Comprende la diferencia entre factoring con recurso y sin recurso, cómo cambia el riesgo de impago y por qué afecta a la rentabilidad." />
+  <meta property="og:url" content="https://anblanch.github.io/guia-factoring/blog/factoring-con-recurso-sin-recurso.html" />
+  <meta property="og:image" content="https://anblanch.github.io/guia-factoring/factoring-og.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Factoring con recurso y sin recurso" />
+  <meta name="twitter:description" content="Quién asume el riesgo de impago en factoring y por qué cambia la rentabilidad." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Factoring con recurso y sin recurso: quién asume el riesgo de impago",
+    "description": "Guía sencilla para entender la diferencia entre factoring con recurso y sin recurso, cómo se reparte el riesgo de impago y por qué cambia la rentabilidad.",
+    "author": {
+      "@type": "Person",
+      "name": "Ángela Blanch"
+    },
+    "inLanguage": "es",
+    "datePublished": "2026-07-16",
+    "dateModified": "2026-07-16",
+    "mainEntityOfPage": "https://anblanch.github.io/guia-factoring/blog/factoring-con-recurso-sin-recurso.html"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Guía de factoring",
+        "item": "https://anblanch.github.io/guia-factoring/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://anblanch.github.io/guia-factoring/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Factoring con recurso y sin recurso",
+        "item": "https://anblanch.github.io/guia-factoring/blog/factoring-con-recurso-sin-recurso.html"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Qué es el factoring con recurso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El factoring con recurso es una modalidad en la que, si el deudor no paga la factura, la empresa cedente debe responder frente al impago según las condiciones de la operación. Para el inversor suele implicar menor riesgo que una operación sin recurso."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es el factoring sin recurso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El factoring sin recurso es una modalidad en la que el riesgo de impago no vuelve a la empresa cedente. En plataformas de inversión, esto puede implicar que el inversor asuma más riesgo si el deudor no paga."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Por qué el factoring sin recurso suele tener más rentabilidad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Porque normalmente implica más riesgo para quien financia la operación. Cuando el inversor asume más incertidumbre, la rentabilidad esperada suele ser mayor para compensar ese riesgo adicional."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué es mejor para un principiante, factoring con recurso o sin recurso?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Para empezar, suele ser más prudente priorizar operaciones con recurso, con seguro de crédito o con deudores de alta calidad. Las operaciones sin recurso pueden ser interesantes, pero exigen analizar mejor el riesgo."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-soft: #f1f5f9;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-soft: #94a3b8;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --primary-soft: #eff6ff;
+      --green: #22c55e;
+      --green-dark: #15803d;
+      --green-soft: #ecfdf5;
+      --orange: #f59e0b;
+      --orange-soft: #fffbeb;
+      --red: #ef4444;
+      --red-soft: #fef2f2;
+      --border: #e2e8f0;
+      --border-soft: #eef2f7;
+      --radius-md: 16px;
+      --radius-lg: 22px;
+      --radius-xl: 30px;
+      --shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.06);
+      --shadow-md: 0 18px 46px rgba(15, 23, 42, 0.10);
+      --shadow-lg: 0 28px 80px rgba(15, 23, 42, 0.16);
+      --max-width: 1180px;
+      --article-width: 1180px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 120px; }
+
+    body {
+      min-height: 100vh;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.13), transparent 28%),
+        radial-gradient(circle at top right, rgba(34, 197, 94, 0.10), transparent 30%),
+        var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.72;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    p { margin: 0; }
+    strong { font-weight: 900; color: var(--text-main); }
+
+    .topbar {
+      position: sticky;
+      top: 18px;
+      z-index: 50;
+      width: calc(100% - 36px);
+      max-width: var(--max-width);
+      margin: 22px auto;
+      padding: 16px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(226, 232, 240, 0.92);
+      border-radius: 999px;
+      box-shadow: 0 16px 38px rgba(15, 23, 42, 0.10);
+      backdrop-filter: blur(16px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      font-weight: 950;
+      letter-spacing: -0.04em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary), var(--green));
+      color: #ffffff;
+      font-size: 0.86rem;
+      box-shadow: 0 12px 26px rgba(37, 99, 235, 0.24);
+      flex: 0 0 auto;
+    }
+
+    .topnav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .topnav::-webkit-scrollbar { display: none; }
+
+    .topnav a {
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: #334155;
+      font-size: 0.82rem;
+      font-weight: 850;
+      white-space: nowrap;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+    .topnav a:hover {
+      transform: translateY(-1px);
+      background: var(--primary-soft);
+      color: var(--primary);
+    }
+
+    .container {
+      width: calc(100% - 36px);
+      max-width: var(--max-width);
+      margin: 0 auto 70px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(330px, 0.92fr);
+      gap: 22px;
+      align-items: stretch;
+      margin-top: 24px;
+    }
+
+    .hero-main,
+    .hero-side,
+    .card,
+    .article-card,
+    .faq-card {
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid var(--border-soft);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-main {
+      position: relative;
+      overflow: hidden;
+      padding: 38px;
+    }
+    .hero-main::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--primary), var(--green));
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      width: fit-content;
+      padding: 6px 11px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin-top: 20px;
+      max-width: 900px;
+      color: var(--text-main);
+      font-size: clamp(2.25rem, 5.1vw, 4.6rem);
+      line-height: 0.96;
+      letter-spacing: -0.075em;
+      font-weight: 950;
+    }
+
+    .hero-lead {
+      margin-top: 24px;
+      max-width: 780px;
+      color: var(--text-muted);
+      font-size: 1.08rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #f8fafc;
+      border: 1px solid var(--border-soft);
+      color: #475569;
+      font-size: 0.82rem;
+      font-weight: 850;
+    }
+
+    .hero-side {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .definition-box {
+      padding: 22px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #ffffff;
+      box-shadow: var(--shadow-md);
+    }
+    .definition-box h2 {
+      font-size: 1rem;
+      font-weight: 950;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+    .definition-box p {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+
+    .quick-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .quick-item {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 14px;
+      border-radius: 18px;
+      background: #f8fafc;
+      border: 1px solid var(--border-soft);
+    }
+    .quick-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 0.9rem;
+      font-weight: 950;
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+    .quick-item strong { display: block; font-size: 0.9rem; line-height: 1.22; }
+    .quick-item span:not(.quick-icon) { display: block; margin-top: 4px; color: var(--text-muted); font-size: 0.82rem; line-height: 1.45; font-weight: 650; }
+
+    .article-card,
+    .faq-card {
+      max-width: var(--article-width);
+      margin: 24px auto 0;
+    }
+
+    .article-card {
+      padding: 42px;
+      border-radius: var(--radius-xl);
+    }
+
+    .article-card section + section { margin-top: 54px; }
+
+    .article-card h2 {
+      margin: 0 0 20px;
+      color: var(--text-main);
+      font-size: clamp(1.6rem, 2.5vw, 2.25rem);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+      font-weight: 950;
+    }
+
+    .article-card h3 {
+      margin: 30px 0 12px;
+      color: var(--text-main);
+      font-size: 1.22rem;
+      line-height: 1.18;
+      letter-spacing: -0.035em;
+      font-weight: 950;
+    }
+
+    .article-card p {
+      margin-top: 16px;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .article-card ul,
+    .article-card ol {
+      margin: 16px 0 0 22px;
+      color: var(--text-muted);
+    }
+    .article-card li { margin-top: 9px; padding-left: 4px; }
+
+    .note {
+      margin-top: 26px;
+      padding: 20px 22px;
+      border-radius: 20px;
+      background: var(--orange-soft);
+      border: 1px solid #fed7aa;
+      color: #9a3412;
+      font-weight: 750;
+    }
+    .note strong { color: #7c2d12; }
+
+    .risk-summary {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .risk-card {
+      position: relative;
+      overflow: hidden;
+      padding: 24px;
+      border-radius: 24px;
+      background: #ffffff;
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-sm);
+    }
+    .risk-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 4px;
+    }
+    .risk-card.safe::after { background: linear-gradient(90deg, var(--green), var(--primary)); }
+    .risk-card.risky::after { background: linear-gradient(90deg, var(--orange), var(--red)); }
+    .risk-label {
+      display: inline-flex;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .risk-card.safe .risk-label { background: var(--green-soft); color: var(--green-dark); }
+    .risk-card.risky .risk-label { background: var(--orange-soft); color: #b45309; }
+    .risk-card h3 { margin: 0 0 10px; font-size: 1.2rem; }
+    .risk-card p { margin-top: 10px; font-size: 0.94rem; }
+
+    .comparison {
+      margin-top: 26px;
+      padding: 26px;
+      border-radius: 26px;
+      background: #f8fafc;
+      border: 1px solid var(--border-soft);
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .metric-card {
+      padding: 18px;
+      border-radius: 20px;
+      background: #ffffff;
+      border: 1px solid var(--border-soft);
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.045);
+    }
+    .metric-card .num {
+      width: 34px;
+      height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      border-radius: 13px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-size: 0.86rem;
+      font-weight: 950;
+      line-height: 1;
+    }
+    .metric-card strong { display: block; font-size: 0.95rem; line-height: 1.25; }
+    .metric-card p { margin-top: 8px; font-size: 0.86rem; }
+
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border-radius: 20px;
+      margin-top: 24px;
+    }
+    .comparison-table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 20px;
+      background: #ffffff;
+      border: 1px solid var(--border-soft);
+    }
+    .comparison-table th,
+    .comparison-table td {
+      padding: 15px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-soft);
+      color: #475569;
+      font-size: 0.9rem;
+      vertical-align: top;
+    }
+    .comparison-table th {
+      background: #0f172a;
+      color: #ffffff;
+      font-size: 0.78rem;
+      font-weight: 950;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .comparison-table td:first-child {
+      color: var(--text-main);
+      font-weight: 900;
+    }
+
+    .checklist {
+      margin-top: 24px;
+      display: grid;
+      gap: 12px;
+    }
+    .check-item {
+      display: grid;
+      grid-template-columns: 34px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 18px;
+      border-radius: 18px;
+      background: #f8fafc;
+      border: 1px solid var(--border-soft);
+    }
+    .check-mark {
+      width: 34px;
+      height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 13px;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      font-weight: 950;
+      line-height: 1;
+    }
+    .check-item strong { display: block; line-height: 1.25; }
+    .check-item p { margin-top: 6px; font-size: 0.9rem; }
+
+    .inline-cta {
+      margin-top: 34px;
+      padding: 28px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #ffffff;
+      box-shadow: var(--shadow-md);
+    }
+    .inline-cta h2 {
+      margin: 0 0 12px;
+      color: #ffffff;
+      font-size: 1.45rem;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+    }
+    .inline-cta p { color: #cbd5e1; }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 16px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 880;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: #ffffff;
+      color: #0f172a;
+      box-shadow: 0 12px 26px rgba(255, 255, 255, 0.12);
+    }
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.10);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.20);
+    }
+
+    .faq-card {
+      padding: 36px;
+      border-radius: var(--radius-xl);
+    }
+    .faq-card h2 {
+      margin: 14px 0 18px;
+      font-size: 1.7rem;
+      letter-spacing: -0.045em;
+      line-height: 1.1;
+      font-weight: 950;
+    }
+    details {
+      margin-top: 14px;
+      padding: 20px 22px;
+      border-radius: 18px;
+      background: #f8fafc;
+      border: 1px solid var(--border-soft);
+    }
+    summary {
+      cursor: pointer;
+      color: var(--text-main);
+      font-weight: 900;
+      line-height: 1.35;
+    }
+    details p {
+      margin-top: 14px;
+      color: var(--text-muted);
+      font-size: 0.96rem;
+    }
+
+    .footer {
+      width: calc(100% - 36px);
+      max-width: var(--article-width);
+      margin: 0 auto 36px;
+      padding-top: 24px;
+      color: var(--text-muted);
+      font-size: 0.82rem;
+      border-top: 1px solid var(--border);
+    }
+    .footer p + p { margin-top: 8px; }
+
+    @media (max-width: 1050px) {
+      .hero { grid-template-columns: 1fr; }
+      .comparison-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 720px) {
+      .topbar {
+        border-radius: 24px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .topnav { width: 100%; }
+      .hero-main,
+      .article-card,
+      .faq-card { padding: 24px; }
+      h1 { font-size: 2.35rem; }
+      .risk-summary { grid-template-columns: 1fr; }
+      .btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://anblanch.github.io/guia-factoring/" aria-label="Volver a la guía de factoring">
+      <span class="brand-mark">FA</span>
+      <span>Guía de factoring</span>
+    </a>
+    <nav class="topnav" aria-label="Navegación del artículo">
+      <a href="#definicion">Definición</a>
+      <a href="#riesgo">Riesgo</a>
+      <a href="#comparativa">Comparativa</a>
+      <a href="#analizar">Qué mirar</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <article class="hero-main">
+        <p class="eyebrow">Tipos de factoring</p>
+        <h1>Factoring con recurso y sin recurso: quién asume el riesgo</h1>
+        <p class="hero-lead">
+          No todas las operaciones de factoring tienen el mismo riesgo. La diferencia entre factoring con recurso y sin recurso marca quién responde si el deudor no paga y, por eso mismo, puede cambiar la rentabilidad esperada.
+        </p>
+        <div class="hero-meta">
+          <span class="pill">⏱️ Lectura: 7 min</span>
+          <span class="pill">📌 Nivel: principiante</span>
+          <span class="pill">🔎 Keyword: factoring con recurso y sin recurso</span>
+        </div>
+      </article>
+
+      <aside class="hero-side" aria-label="Resumen rápido del artículo">
+        <div class="definition-box">
+          <h2>Resumen rápido</h2>
+          <p>
+            En el factoring con recurso, la empresa cedente puede tener que responder si el deudor no paga. En el factoring sin recurso, ese riesgo no vuelve a la cedente y normalmente lo asume quien financia la operación, según las condiciones de cada plataforma.
+          </p>
+        </div>
+
+        <div class="quick-list">
+          <div class="quick-item"><span class="quick-icon">1</span><div><strong>Con recurso</strong><span>Menor riesgo para el inversor y rentabilidad normalmente más moderada.</span></div></div>
+          <div class="quick-item"><span class="quick-icon">2</span><div><strong>Sin recurso</strong><span>Más riesgo para quien invierte y rentabilidad potencialmente más alta.</span></div></div>
+          <div class="quick-item"><span class="quick-icon">3</span><div><strong>Seguro de crédito</strong><span>Puede añadir una capa de protección, pero no siempre cubre todo.</span></div></div>
+          <div class="quick-item"><span class="quick-icon">4</span><div><strong>Clave real</strong><span>No mires solo el tipo: revisa deudor, plazo, scoring, seguro y concentración.</span></div></div>
+        </div>
+      </aside>
+    </section>
+
+    <article class="article-card">
+      <section id="definicion">
+        <h2>Qué significa factoring con recurso y sin recurso</h2>
+        <p>
+          Cuando inviertes en factoring, estás financiando una factura pendiente de cobro. Pero si esa factura no se paga a tiempo, la pregunta importante es: <strong>¿quién asume el problema?</strong>
+        </p>
+        <p>
+          Ahí aparece la diferencia entre <strong>factoring con recurso</strong> y <strong>factoring sin recurso</strong>. No es una simple etiqueta técnica: afecta directamente al riesgo que asume el inversor y a la rentabilidad que puede exigir la operación.
+        </p>
+
+        <div class="risk-summary">
+          <div class="risk-card safe">
+            <span class="risk-label">Con recurso</span>
+            <h3>La cedente responde si el deudor no paga</h3>
+            <p>
+              En esta modalidad, si el deudor no paga la factura, la empresa que la emitió puede tener que devolver el dinero o responder frente a la operación, según las condiciones pactadas.
+            </p>
+            <p>
+              Para el inversor suele ser una estructura más defensiva, porque no depende únicamente del pago final del deudor.
+            </p>
+          </div>
+
+          <div class="risk-card risky">
+            <span class="risk-label">Sin recurso</span>
+            <h3>El riesgo no vuelve a la empresa cedente</h3>
+            <p>
+              En esta modalidad, si el deudor no paga, la empresa cedente no tiene por qué responder del impago. El riesgo queda en la operación y puede recaer sobre quien la financia.
+            </p>
+            <p>
+              Por eso suele ofrecer una rentabilidad más alta: el inversor está asumiendo más incertidumbre.
+            </p>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Importante:</strong> en plataformas de inversión, no basta con leer “con recurso” o “sin recurso”. Hay que revisar siempre la documentación de la operación, quién es el deudor, si hay seguro y qué ocurre exactamente en caso de impago o retraso.
+        </div>
+      </section>
+
+      <section id="riesgo">
+        <h2>Por qué cambia el riesgo de impago</h2>
+        <p>
+          El riesgo principal en factoring es que el <strong>deudor de la factura</strong> no pague al vencimiento. Ese deudor puede ser una empresa privada, una administración pública u otra entidad que tiene pendiente abonar la factura.
+        </p>
+        <p>
+          En una operación con recurso, si el deudor no paga, existe una segunda vía de protección: la empresa cedente puede tener que responder. En una operación sin recurso, esa segunda vía desaparece o queda mucho más limitada, por lo que el análisis del deudor se vuelve todavía más importante.
+        </p>
+
+        <div class="comparison">
+          <p class="eyebrow">Relación riesgo / rentabilidad</p>
+          <div class="comparison-grid">
+            <div class="metric-card">
+              <span class="num">1</span>
+              <strong>Menos protección suele implicar más rentabilidad</strong>
+              <p>Si el inversor asume más riesgo, normalmente exigirá una rentabilidad más alta para compensarlo.</p>
+            </div>
+            <div class="metric-card">
+              <span class="num">2</span>
+              <strong>Más protección suele reducir la rentabilidad</strong>
+              <p>Si hay recurso, seguro o un deudor muy solvente, la operación puede pagar menos porque el riesgo percibido es menor.</p>
+            </div>
+            <div class="metric-card">
+              <span class="num">3</span>
+              <strong>El tipo de factoring no lo explica todo</strong>
+              <p>También influyen plazo, historial, scoring, sector, importe, concentración y condiciones legales.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comparativa">
+        <h2>Comparativa: factoring con recurso vs sin recurso</h2>
+        <p>
+          La forma más sencilla de entenderlo es comparando quién asume el impago, qué nivel de riesgo tiene el inversor y qué rentabilidad suele esperarse en cada caso.
+        </p>
+
+        <div class="table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Tipo de factoring</th>
+                <th>¿Quién asume el impago?</th>
+                <th>Riesgo para el inversor</th>
+                <th>Rentabilidad esperada</th>
+                <th>Lectura práctica</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Con recurso</td>
+                <td>La empresa cedente responde si el deudor no paga, según condiciones</td>
+                <td>Bajo / medio</td>
+                <td>Media</td>
+                <td>Más interesante para empezar, siempre que el resto de datos también encaje.</td>
+              </tr>
+              <tr>
+                <td>Sin recurso</td>
+                <td>El riesgo no vuelve a la cedente; puede recaer sobre el inversor</td>
+                <td>Medio / alto</td>
+                <td>Alta</td>
+                <td>Puede ser rentable, pero exige analizar muy bien deudor, seguro y plazo.</td>
+              </tr>
+              <tr>
+                <td>Con seguro de crédito</td>
+                <td>La aseguradora puede cubrir parte del impago si se cumplen condiciones</td>
+                <td>Bajo / medio</td>
+                <td>Baja / media</td>
+                <td>Aporta tranquilidad, pero hay que leer qué cubre y qué exclusiones tiene.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="rentabilidad">
+        <h2>Por qué una operación sin recurso puede pagar más</h2>
+        <p>
+          La rentabilidad no aparece de la nada. Si una operación ofrece un interés más alto, normalmente hay una razón: más plazo, más incertidumbre, menor protección, peor scoring, menor liquidez o mayor riesgo de que el pago se retrase.
+        </p>
+        <p>
+          Por eso el factoring sin recurso puede parecer más atractivo a primera vista. Ves una rentabilidad más alta y es fácil pensar que es una oportunidad mejor. Pero si el inversor está asumiendo más riesgo de impago, esa rentabilidad extra puede ser simplemente la compensación por aceptar una operación más delicada.
+        </p>
+        <div class="note">
+          <strong>Idea clave:</strong> una rentabilidad más alta no significa automáticamente una mejor inversión. A veces solo significa que hay más riesgo escondido detrás.
+        </div>
+      </section>
+
+      <section id="analizar">
+        <h2>Qué mirar antes de invertir en factoring con o sin recurso</h2>
+        <p>
+          Para analizar una operación no basta con mirar si es con recurso o sin recurso. Esa información es importante, pero debe formar parte de una revisión más completa.
+        </p>
+
+        <div class="checklist">
+          <div class="check-item">
+            <span class="check-mark">✓</span>
+            <div>
+              <strong>Quién es el deudor real</strong>
+              <p>La pregunta clave no es solo quién cede la factura, sino quién tiene que pagarla al vencimiento.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <span class="check-mark">✓</span>
+            <div>
+              <strong>Qué ocurre si no paga</strong>
+              <p>Revisa si la operación tiene recurso, seguro, garantías, proceso de recobro o condiciones específicas en caso de impago.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <span class="check-mark">✓</span>
+            <div>
+              <strong>Scoring y calidad crediticia</strong>
+              <p>Un scoring alto puede indicar menor riesgo, aunque nunca elimina totalmente la posibilidad de retraso o impago.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <span class="check-mark">✓</span>
+            <div>
+              <strong>Plazo de la operación</strong>
+              <p>Cuanto más tiempo esté bloqueado el capital, más importante es exigir una rentabilidad adecuada y controlar vencimientos.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <span class="check-mark">✓</span>
+            <div>
+              <strong>Concentración de cartera</strong>
+              <p>Incluso una operación aparentemente segura puede ser peligrosa si concentras demasiado capital en el mismo deudor, empresa o sector.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Qué elegir si estás empezando</h2>
+        <p>
+          Para un inversor principiante, lo más prudente suele ser empezar por operaciones más fáciles de entender y con más capas de protección: factoring con recurso, operaciones con seguro de crédito o deudores de alta calidad.
+        </p>
+        <p>
+          Eso no significa que el factoring sin recurso sea malo. Significa que exige más análisis. Antes de perseguir rentabilidades altas, conviene entender bien qué riesgo estás aceptando, qué pasaría si el deudor no paga y cuánto capital tienes expuesto a operaciones similares.
+        </p>
+
+        <div class="inline-cta">
+          <h2>¿Quieres ver cómo analizo yo el riesgo en mis operaciones?</h2>
+          <p>
+            En mi página de resultados reales enseño cómo controlo rentabilidad, retrasos, concentración, empresas repetidas y cartera viva. Y si ya inviertes en factoring, el dashboard te permite importar tus Excel y ver estas métricas de forma automática.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://anblanch.github.io/guia-factoring/resultados-reales-factoring.html">Ver resultados reales</a>
+            <a class="btn btn-secondary" href="https://anblanch.github.io/dashboard-factoring-landing/">Ver dashboard de factoring</a>
+            <a class="btn btn-secondary" href="https://anblanch.github.io/guia-factoring/que-es-el-factoring.html">Leer qué es el factoring</a>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <section class="faq-card" id="faq">
+      <p class="eyebrow">FAQ</p>
+      <h2>Preguntas frecuentes sobre factoring con recurso y sin recurso</h2>
+
+      <details>
+        <summary>¿Qué es factoring con recurso?</summary>
+        <p>Es una modalidad en la que, si el deudor no paga la factura, la empresa cedente puede tener que responder frente al impago, según las condiciones de la operación.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué es factoring sin recurso?</summary>
+        <p>Es una modalidad en la que el riesgo de impago no vuelve a la empresa cedente. En plataformas de inversión, esto puede implicar que el inversor asuma más riesgo si el deudor no paga.</p>
+      </details>
+
+      <details>
+        <summary>¿Cuál tiene más riesgo para el inversor?</summary>
+        <p>Normalmente, el factoring sin recurso tiene más riesgo para el inversor, porque hay menos protección si el deudor no paga. Aun así, hay que revisar cada operación concreta.</p>
+      </details>
+
+      <details>
+        <summary>¿Por qué el factoring sin recurso puede tener más rentabilidad?</summary>
+        <p>Porque el inversor asume más riesgo. Una rentabilidad más alta suele ser la compensación por aceptar más incertidumbre, menor protección o mayor probabilidad de retraso o impago.</p>
+      </details>
+
+      <details>
+        <summary>¿Qué es mejor para empezar?</summary>
+        <p>Para empezar, suele ser más sensato priorizar operaciones con recurso, con seguro de crédito o con deudores de buena calidad. Después, conforme entiendas mejor el riesgo, puedes valorar operaciones más complejas.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Contenido educativo basado en experiencia personal y en el análisis de operaciones de factoring. No constituye asesoramiento financiero ni recomendación personalizada de inversión.</p>
+    <p>Antes de invertir, revisa la documentación de cada operación, el deudor, el plazo, las comisiones, el seguro, el riesgo de impago y tu situación financiera personal.</p>
+  </footer>
+</body>
+</html>
